@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Save" />
+
+    <EditText
+        android:id="@+id/toDoDueDateDay"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toDoDueDateTime"
+        android:layout_alignBottom="@+id/toDoDueDateTime"
+        android:layout_toEndOf="@+id/toDoDueDateMonth"
+        android:hint="DD"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="DD" />
+
+    <EditText
+        android:id="@+id/toDoDueDateTime"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toDoText"
+        android:layout_marginTop="53dp"
+        android:layout_toEndOf="@+id/toDoDueDateDay"
+        android:hint="00:00"
+        android:maxLength="5"
+        android:text="Time" />
+
+    <EditText
+        android:id="@+id/toDoDueDateMonth"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toDoDueDateDay"
+        android:layout_alignBottom="@+id/toDoDueDateDay"
+        android:layout_alignParentStart="true"
+        android:hint="MM"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="MM" />
+
+    <EditText
+        android:id="@+id/toDoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toDoTitle"
+        android:hint="Text goes here"
+        android:text="Text goes here" />
+
+    <EditText
+        android:id="@+id/toDoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toDoCategory"
+        android:hint="Title"
+        android:text="Title" />
+
+    <EditText
+        android:id="@+id/toDoCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="Category"
+        android:text="Title" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:elevation="24dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save_button"
+        android:layout_alignEnd="@+id/toDoDueDateTime"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginTop="26dp" />
+
+</RelativeLayout>

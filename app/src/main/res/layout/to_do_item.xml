@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/toDoText"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingTop="10dp"
+        android:text="text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="42dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toDoDueDateMonth"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="wrap_content"
+        android:id="@+id/due_date"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/toDoDueDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:text="dueDate"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/due_date"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="DD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/toDoDueDateDay"
+        android:layout_alignBaseline="@+id/toDoDueDateTime"
+        android:layout_alignBottom="@+id/toDoDueDateTime"
+        android:layout_toStartOf="@+id/toDoDueDateTime" />
+
+    <TextView
+        android:text="MM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/toDoDueDateMonth"
+        android:layout_alignBaseline="@+id/toDoDueDateDay"
+        android:layout_alignBottom="@+id/toDoDueDateDay"
+        android:layout_toStartOf="@+id/toDoDueDateDay" />
+
+    <TextView
+        android:text="Due Date:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/toDoDueDateMonth"
+        android:layout_toStartOf="@+id/toDoDueDateMonth" />
+
+    <TextView
+        android:text="Date Created:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/toDoTitle"
+        android:layout_toStartOf="@+id/due_date" />
+
+    <TextView
+        android:id="@+id/toDoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/toDoCategory" />
+</RelativeLayout>
